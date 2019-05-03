@@ -50,7 +50,7 @@
 <main class="contenedor seccion contenido-centrado">
 	<h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
 	
-	<form action="">
+	<form class="contacto" action="">
 		<fieldset><!-- se utiliza para dividir, se ve en navegador como un cuadro-->
 			<legend>INFORMACION PERSONAL</legend><!-- cundo se pone dentro de la etiqueta fieldset aparece incrustado en el recuadro, si se hce antes no-->
 			<label for="nombre">Nombre:</label>
@@ -85,22 +85,25 @@
 			<legend>Contacto</legend>
 
 			<p>Como desea ser contactado</p>
+	<div class="forma-contacto">
+			
 			<label for="telefoni">Telefono</label>
 			<input type="radio" name="contacto" id="telefoni">
 
 			<label for="E-mail">E-mail</label>
 			<input type="radio" name="contacto" id="E-mail">
-
+	</div>
 			<p>Si eligio telefono, elija la fecha y la hora</p>
 			<label for="fecha">Fecha:</label>
 			<input type="date" id="fecha">
 
 			<label for="hora">Hora:</label>
 			<input type="time" id="hora">
+	
 
 		</fieldset>
 
-		<input type="submit" name="" value="enviar" >
+		<input type="submit" name="" value="enviar" class="boton boton-verde" >
 	</form>
 
 </main>
