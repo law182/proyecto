@@ -192,8 +192,28 @@ enlace tome una linea*/}
 	color: #71B100;
 
 }
-
-
+/* Mobile Menu*/
+.mobile-menu img {
+	width: 5rem;
+}
+@media(min-width: 768px){
+	.mobile-menu {
+		display: none;
+	}}
+	
+.navegacion:target{
+	display: block;
+}
+.navegacion{/*para que por default no aparezca*/
+	display: none;
+}
+@media(min-width:768px )
+{
+	.navegacion{
+		display: block;/*esto se utiliza para que cuando este ms grande la pantalla se vea
+		*/
+	}
+}
 
 /**iconos nosotros*/
 @media(min-width: 768px){
